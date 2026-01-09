@@ -418,6 +418,24 @@
             font-weight: 300;
         }
 
+        .book-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--cream);
+            border: 2px solid var(--cream);
+        }
+
+        .btn-secondary:hover {
+            background: var(--cream);
+            color: var(--ink);
+        }
+
         /* Newsletter Section */
         .newsletter-section {
             padding: 6rem 5vw;
@@ -709,7 +727,10 @@
             <p class="book-genre">Scottish Literary Fiction</p>
             <h2>The Psyke <span class="green">Green</span> Machine</h2>
             <p class="book-description">A coming-of-age story set in 1984 Glasgow that explores the space between adolescence and adulthood, between the person you show the world and the one you keep hidden.</p>
-            <a href="https://www.amazon.com/dp/B0G941DF3X" target="_blank" rel="noopener" class="btn btn-primary">Read Now on Amazon</a>
+            <div class="book-buttons">
+                <a href="https://www.amazon.com/dp/B0G941DF3X" target="_blank" rel="noopener" class="btn btn-primary">Ebook on Amazon</a>
+                <a href="https://books.by/khalifasaber/the-psyke-green-machine" target="_blank" rel="noopener" class="btn btn-secondary">Paperback</a>
+            </div>
         </div>
     </section>
 
